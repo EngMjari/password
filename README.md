@@ -15,6 +15,8 @@ for user this code :
 1-
 ```terminal
 git clone https://github.com/EngMjari/password
+npm install
+npm start
 ```
 
 2- 

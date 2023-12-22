@@ -26,7 +26,7 @@ const Password = () => {
                 <InputGroup.Text id="PasswordInput">Password</InputGroup.Text>
                 <Form.Control type={password} id='PasswordInput' />
                 <InputGroup.Text>
-                    <PassView onMouseDown={() => setPassword("text")} onMouseUp={() => setPassword('password')} onMouseLeave={() => setPassword('password')} icon={faEye} />
+                    <PassView onTouchStart={() => password === "password" ? setPassword('text') : setPassword("password")} onMouseDown={() => setPassword("text")} onMouseUp={() => setPassword('password')} onMouseLeave={() => setPassword('password')} icon={faEye} />
                 </InputGroup.Text>
 
             </InputGroup>

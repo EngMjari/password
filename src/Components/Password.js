@@ -21,7 +21,7 @@ const Password = () => {
     const [password, setPassword] = useState("password")
 
     return (
-        <Wrapper>
+        <Wrapper className="px-4 px-lg-2">
             <InputGroup>
                 <InputGroup.Text id="PasswordInput">Password</InputGroup.Text>
                 <Form.Control type={password} id='PasswordInput' />
